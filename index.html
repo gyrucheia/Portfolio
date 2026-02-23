@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyrucheia | Jamaica Ramores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="mesh-gradient"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold neon-text" href="#">GYRUCHEIA</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#banners">Banners</a>
+                <a class="nav-link" href="#posters">Posters</a>
+                <a class="nav-link" href="#photography">Photography</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center" data-aos="zoom-in">
+                    <div class="neon-boundary">
+                        <img src="images/profile.jpg" alt="Jamaica Ramores" class="profile-img">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <h1 class="display-3 fw-bold neon-text">Gyrucheia</h1>
+                    <h5 class="text-info mb-3">by Jamaica Ramores</h5>
+                    
+                    <div class="about-me-text text-light">
+                        <p>Hi! I'm <strong>Jamaica Ramores</strong>, an IT student who just really enjoys creating things. Gyrucheia is where I keep all my school projects and the designs I make for fun. I’m still learning and improving every day. I like playing around with Banners and Posters to see what looks good, and I use Photography to capture simple moments around me. My career goal is to become a proficient UI/UX Designer and Frontend Developer. You can also find me on <a href="https://www.linkedin.com/in/jamaica-ramores-32b0752b0" target="_blank" class="text-info text-decoration-none">LinkedIn</a>.</p>
+                    </div>
+
+                    <div class="tech-stack mt-4">
+                        <p class="small text-info mb-2 text-uppercase fw-bold">Skills & Tools:</p>
+                        <img src="images/canva-logo.png" title="Canva" width="40">
+                        <img src="images/lightroom-logo.png" title="Lightroom" width="40">
+                        <img src="images/capcut-logo.png" title="CapCut" width="40">
+                        <img src="images/davinci-logo.png" title="DaVinci" width="40">
+                        <img src="images/html-logo.png" title="HTML5" width="40" class="ms-2">
+                        <img src="images/css-logo.png" title="CSS3" width="40" class="ms-1">
+                        <img src="images/js-logo.png" title="JavaScript" width="40" class="ms-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="banners" class="container py-5">
+        <h2 class="neon-text text-center mb-5" data-aos="fade-up">BANNER DESIGN</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5 text-center" data-aos="zoom-in">
+                <div class="glass-card neon-img-border"><img src="images/b1.png" class="banner-img"></div>
+                <p class="text-neon-label mt-3">Valorant Tournament of Wargods x Cybertimer</p>
+            </div>
+            <div class="col-md-5 text-center" data-aos="zoom-in">
+                <div class="glass-card neon-img-border"><img src="images/b2.png" class="banner-img"></div>
+                <p class="text-neon-label mt-3">Congratulations Layout</p>
+            </div>
+            <div class="col-md-5 text-center" data-aos="zoom-in">
+                <div class="glass-card neon-img-border"><img src="images/b3.png" class="banner-img"></div>
+                <p class="text-neon-label mt-3">Bidas Lechon Package</p>
+            </div>
+            <div class="col-md-5 text-center" data-aos="zoom-in">
+                <div class="glass-card neon-img-border"><img src="images/b4.png" class="banner-img"></div>
+                <p class="text-neon-label mt-3">FrontLiners Layout Banner</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="posters" class="container py-5">
+        <h2 class="neon-text text-center mb-5" data-aos="fade-up">POSTER LAYOUTS</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5 text-center" data-aos="fade-up">
+                <div class="glass-card neon-img-border"><img src="images/p1.png" class="poster-img"></div>
+                <p class="text-neon-label mt-3">Welfare Maximization</p>
+            </div>
+            <div class="col-md-5 text-center" data-aos="fade-up">
+                <div class="glass-card neon-img-border"><img src="images/p2.png" class="poster-img"></div>
+                <p class="text-neon-label mt-3">Songlabai</p>
+            </div>
+            <div class="col-md-5 text-center" data-aos="fade-up">
+                <div class="glass-card neon-img-border"><img src="images/p3.png" class="poster-img"></div>
+                <p class="text-neon-label mt-3">Darenz Character Intro</p>
+            </div>
+            <div class="col-md-5 text-center" data-aos="fade-up">
+                <div class="glass-card neon-img-border"><img src="images/p4.png" class="poster-img"></div>
+                <p class="text-neon-label mt-3">Sparx Fiber</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="photography" class="container py-5 border-bottom border-secondary">
+        <h2 class="neon-text text-center mb-5" data-aos="fade-up">PHOTOGRAPHY GALLERY</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph1.png" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph2.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph3.png" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph4.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph5.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph6.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph7.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph8.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph9.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph10.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph11.jpg" class="photo-img"></div></div>
+            <div class="col-md-4 text-center" data-aos="fade-up"><div class="glass-card neon-img-border"><img src="images/ph12.jpg" class="photo-img"></div></div>
+        </div>
+    </section>
+
+    <section id="github" class="container py-5" data-aos="fade-up">
+        <h2 class="neon-text text-center mb-4">My GitHub Code</h2>
+        <div id="repo-list" class="row g-3 justify-content-center text-center">
+            </div>
+        <div class="text-center mt-3">
+            <a href="https://github.com/gyrucheia" target="_blank" class="btn btn-neon btn-sm">Visit GitHub Profile</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="contact-card">
+                    <h4 class="neon-text">Say Hello</h4>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Name</label>
+                            <input type="text" name="from_name" class="form-control glass-input" placeholder="Enter name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Email</label>
+                            <input type="email" name="reply_to" class="form-control glass-input" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light small">Message</label>
+                            <textarea name="message" class="form-control glass-input" placeholder="Message..." rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-neon w-100">Send Message</button>
+                        <div id="contactStatus" class="mt-2 small text-center"></div>
+                    </form>
+                    
+                    <div class="mt-4 p-3 border border-secondary rounded">
+                        <h6 class="text-info">Quick Inquiry</h6>
+                        <p class="small text-muted">Interested in a project? Click to notify me.</p>
+                        <button type="button" onclick="sendQuickInquiry()" class="btn btn-sm btn-outline-info">I'm Interested!</button>
+                        <div id="inquiryStatus" class="mt-2 small text-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-5 border-top border-secondary">
+        <p class="mb-1 text-light fw-bold">Jamaica Ramores</p>
+        <p class="small text-muted">IT Student | CNSC</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
